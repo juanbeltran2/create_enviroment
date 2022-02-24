@@ -1,0 +1,23 @@
+LINUX:
+
+1. Creacion: py -m venv nombre_enviroment
+2. Activar: source nombre_enviroment/bin/activate
+3. Salir del entorno: deactivate
+
+WINDOWS
+
+1. Creacion:  py -m venv nombre_enviroment
+2. Activar: .\venv\Scripts\activate
+3. Salir del entorno: deactivate
+
+
+Paquetes instalados:
+pip freeze
+
+Compartir los paquetes instalados:
+pip freeze > requeriments.txt
+
+Cargar las dependencias 
+pip install -r requeriments.txt
+
+

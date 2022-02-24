@@ -1,0 +1,83 @@
+Conexion
+ssh -i ssh-key-2021-10-12.key opc@152.67.45.211
+
+Comandos creacio y envio a git
+===================================
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/JhonnyCamilo/tutoria.git //la direccion debe ser la de mi repositorio
+git push -u origin master 
+
+
+rm -rf target
+
+---- Actualizar -------------
+
+git add --all
+git commit -m "Se crea corrige back"
+git fetch
+git push
+
+------------- Clonar Repositorio ---------------------
+git init
+git clone url-repositorio
+git pull
+
+---------- Pasar de escritorio a Github -----------
+
+git init
+git add .
+git commit -m "firs commit"
+git remote add origin https://github.com/juanbeltran2/Ciclo4_Reto1.git
+git push -u origin master
+
+-------------- HTTPD --------------------
+
+httpd -v --> Version
+sudo yum install -y httpd
+sudo systemctl enable httpd
+sudo systemctl restart httpd
+sudo firewall-cmd --add-service=http --permanent
+sudo firewall-cmd --reload
+
+
+--------------------------------------------------------------------------------------------
+
+Category
+POST
+{"name":"categoria1","description":"primera categoria"}
+
+PUT
+{"id":1,"name":"modificada","description":"Se ha modificado"}
+
+-------------------------------------------------------------------------------------
+
+Farm
+POST
+{"address":"Hacienda Lucas","extension":450,"category":{"id":1},"name":"Hacienda Lucas km 12 via capital","description":"Hacienda Lucas km 12 via capital"}
+
+PUT
+{"id":1,"address":"HL","name":"Hacienda Lucas","description":"Hacienda Lucas via capital", "extension":440}
+
+-------------------------------------------------------------------------------------
+
+Client
+POST
+{"name":"Agustin Parra","email":"agustin@gmail.com","password":"agustin123","age":18}
+
+PUT
+{"idClient":1,"name":"Juan Beltran","email":"juan@gmail.com","password":"Juan123","age":30}
+
+-------------------------------------------------------------------------------------
+
+Message
+{"messageText":"Me gusta.","client":{"idClient":1},"farm":{"id":1}}
+
+Reservation
+{"startDate":"2020-12-20","devolutionDate":"2020-12-20","client":{"idClient":1},"farm":{"id":1}}
+
+
+
+lsb_release -a
+-----------------------------------------------------------------------------
